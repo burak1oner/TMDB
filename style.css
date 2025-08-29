@@ -1,0 +1,489 @@
+/*! start: base_css */
+*{
+    margin: 0;                                      /*Tüm elementlerin dış boşluklarını sıfırlar.*/
+}
+/*! end: base_css */
+
+/*! start: navbar */
+.navbar{
+    background-color: rgb(1, 42, 76);
+    height: 60px;
+    color: white;  
+    position: sticky;
+    top: 0;
+}
+
+.navbar-wrapper{                                    /*Navbar içeriğini yatay olarak düzenler.*/
+    display: flex;
+    justify-content: space-between;                 /*Yatayda ilk ve son öğeyi iki uca iter, ortadaki boşluğu otomatik doldurur.*/
+    align-items: center;                            /*Dikeyde ortalar.*/
+    height: 100%;
+    padding: 0 50px;
+}
+
+.logo{
+    color: rgb(28, 129, 218);
+    font-size: 40px;
+}
+
+.menu-options{
+    display: flex;
+    list-style: none;
+    column-gap: 25px;                               /*Sütunlar arası boşlukları ayarlar.*/
+}
+
+.menu-options-item{
+    cursor: pointer;
+}
+
+.menu-options-item:hover{                           /*Fare ile üstüne gelinen yerde farklı bir stil uygular.*/
+    font-weight: bold;
+}
+
+.menu-options-item-active{
+    font-weight: bold;
+}
+
+.profile-text-box{
+    display: flex;
+    list-style: none;
+    column-gap: 25px; 
+}
+
+.profile-text:hover{
+    font-weight: bold;
+}
+
+.profile-text{
+    cursor: pointer;
+}
+
+.profile{
+    display: flex;
+    align-items: center;
+    column-gap: 25px;
+}
+
+.switch-mode{
+    width: 40px;
+    height: 20px;
+    border-radius: 20px;                                    /*Köşeleri yuvarlak forma çevirir.*/
+    background-color: rgb(63, 133, 148);
+    position: relative;
+    display: flex;
+    align-items: center; 
+    justify-content: space-around; 
+}
+
+.switch-symbol{
+    color: white;
+}
+
+.switch-mode-slide{
+    width: 20px;
+    height: 20px;
+    background-color: rgb(63, 133, 148);
+    border-radius: 50%;
+    cursor: pointer;
+    position: absolute;
+    right: 1px;
+}
+/*! end: navbar */
+
+/*! start: main side */
+.main-content{
+    display: flex;
+    align-items: center;
+    padding-top: 40px;
+    height: 400px;
+    width: 100vw;
+    background: url("ts/im.png");
+    background-size: 100% 100%;    
+}
+
+.main-content-wrapper{                                    
+    display: flex;    
+    flex-direction: column;                     /*Dikey şekilde sıralar.*/   
+    padding-top: 140px;         
+    padding-left: 150px;                        
+    height: 100%;
+    row-gap: 20px;
+}
+
+.main-text{
+    display: block;
+    color: white;
+    font-size: 60px;
+    text-align: left;
+    font-weight: bold;
+}
+
+.sub-text{
+    display: flex;
+    color: white;
+    font-size: 40px;
+    text-align: left;
+}
+
+.search-bar-box{
+    display: flex;
+    align-items: center;
+    width: 1500px;
+    height: 40px;
+    border-radius: 25px;
+    background-color:  white;
+    justify-content: space-between;
+    padding: 0 15px;
+}
+
+.search-bar-text{
+    color: black;
+    font-size: 20px;
+}
+/*! end: main side */
+
+/*! start: trend side */
+.trend-content-wrapper{
+    display: flex;               
+    align-items: center;                            
+    height: 100%;
+    padding-top: 40px;
+    padding-left: 150px;
+    column-gap: 30px;
+}
+
+.trend-text{
+    font-size: 35px;
+    font-weight: bold;
+    color: black;
+}
+
+.switch-trend{
+    width: 160px;
+    height: 20px;
+    border-radius: 20px;                               
+    background-color: white;
+    border-width: 2px;
+    border-style: solid;
+    border-color: black;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-around; 
+}
+
+.switch-trend-slide{
+    width: 70px;
+    height: 20px;
+    border-radius: 20px; 
+    background-color: rgb(1, 42, 76);
+    opacity: 0.5;
+    position: absolute;
+    left: 0;
+}
+
+.trend-films-wrapper{
+    display: flex;          
+    flex-wrap: nowrap;                                  /*Satırdan dışarı taşırmaz.*/       
+    column-gap: 40px;
+    padding-top: 25px;              
+    padding-left: 150px;
+}
+
+.t-films{
+    text-align: center;     
+    width: 250px;  
+    font-size: 18px;
+    font-weight: bold;         
+}
+
+.t-films img{               
+    border-radius: 8px; 
+    z-index: 1;  
+}
+
+.t-films img:hover{
+    transform: scale(1.2);
+    margin: 20px 0px;
+    opacity: 0.5;
+    transition: 1s all ease;                                /*Yavaşlatma sağlar.*/
+}
+/*! end: trend side */
+
+/*! start: latest trailers side */
+.latest-trailers-content-wrapper{
+    display: flex;               
+    align-items: center;                            
+    height: 100%;
+    padding-top: 40px;
+    padding-left: 150px;
+    column-gap: 30px;
+}
+
+.latest-trailers-text{
+    font-size: 35px;
+    font-weight: bold;
+    color: black;
+}
+
+.switch-latest-trailers{
+    width: 400px;
+    height: 20px;
+    border-radius: 20px;                               
+    background-color: white;
+    border-width: 2px;
+    border-style: solid;
+    border-color: black;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-around; 
+}
+
+.switch-latest-trailers-slide{
+    width: 70px;
+    height: 20px;
+    border-radius: 20px; 
+    background-color: rgb(1, 42, 76);
+    opacity: 0.5;
+    position: absolute;
+    left: 0;
+}
+
+.latest-trailers-films-wrapper{
+    display: flex;          
+    flex-wrap: nowrap;                                  /*Satırdan dışarı taşırmaz.*/       
+    column-gap: 50px;
+    padding-top: 25px;              
+    padding-left: 150px;
+}
+
+.lt-films{
+    text-align: center;     
+    width: 350px;  
+    font-size: 18px;
+    font-weight: bold;         
+}
+
+.lt-films img{        
+    border-radius: 8px; 
+    z-index: 1;     
+}
+
+.lt-films img:hover{
+    transform: scale(1.2);
+    margin: 20px 0px;
+    opacity: 0.5;
+    transition: 1s all ease;
+}
+/*! end: latest trailers side */
+
+/*! start: what's popular side */
+.popular-films-content-wrapper{
+    display: flex;               
+    align-items: center;                            
+    height: 100%;
+    padding-top: 40px;
+    padding-left: 150px;
+    column-gap: 30px;
+}
+
+.popular-films-text{
+    font-size: 35px;
+    font-weight: bold;
+    color: black;
+}
+
+.switch-popular-films{
+    width: 400px;
+    height: 20px;
+    border-radius: 20px;                               
+    background-color: white;
+    border-width: 2px;
+    border-style: solid;
+    border-color: black;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.switch-popular-films-slide{
+    width: 90px;
+    height: 20px;
+    border-radius: 20px; 
+    background-color: rgb(1, 42, 76);
+    opacity: 0.5;
+    position: absolute;
+    left: 0;
+}
+
+.popular-films-wrapper{
+    display: flex;          
+    flex-wrap: nowrap;                                         
+    column-gap: 40px;
+    padding-top: 25px;              
+    padding-left: 150px;
+}
+
+.p-films{
+    text-align: center;    
+    width: 250px;
+    font-size: 18px;
+    font-weight: bold;         
+}
+
+.p-films img{
+        
+    border-radius: 8px;
+    z-index: 1;    
+}    
+
+.p-films img:hover{
+    transform: scale(1.2);
+    margin: 20px 0px;
+    opacity: 0.5;
+    transition: 1s all ease;
+}
+/*! end: what's popular side */
+
+/*! start: free to watch side */
+.free-watch-content-wrapper{
+    display: flex;               
+    align-items: center;                            
+    height: 100%;
+    padding-top: 40px;
+    padding-left: 150px;
+    column-gap: 30px;
+}
+
+.free-watch-text{
+    font-size: 35px;
+    font-weight: bold;
+    color: black;
+}
+
+.switch-free-watch{
+    width: 200px;
+    height: 20px;
+    border-radius: 20px;                               
+    background-color: white;
+    border-width: 2px;
+    border-style: solid;
+    border-color: black;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-around; 
+}
+
+.switch-free-watch-slide{
+    width: 100px;
+    height: 20px;
+    border-radius: 20px; 
+    background-color: rgb(1, 42, 76);
+    opacity: 0.5;
+    position: absolute;
+    left: 0;
+}
+
+.free-watch-films-wrapper{
+    display: flex;          
+    flex-wrap: nowrap;                                  /*Satırdan dışarı taşırmaz.*/       
+    column-gap: 40px;
+    padding-top: 25px;              
+    padding-left: 150px;
+}
+
+.fw-films{
+    text-align: center;     
+    width: 250px;  
+    font-size: 18px;
+    font-weight: bold;         
+}
+
+.fw-films img{
+             
+    border-radius: 8px;
+    z-index: 1;    
+}
+
+.fw-films img:hover{
+    transform: scale(1.2);
+    margin: 20px 0px;
+    opacity: 0.5;
+    transition: 1s all ease;
+}
+/*! end: free to watch side */
+
+/*! start: arrow settings */
+.arrow0, .arrow2, .arrow3{
+    width: 80px;
+    font-size: 100px;
+    display: flex;
+    position: absolute;
+    right: 0;
+    margin-top: 450px;
+    padding-top: 10px;
+    color: blue;
+    opacity: 0.5;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.arrow1{
+    width: 80px;
+    font-size: 100px;
+    display: flex;
+    position: absolute;
+    right: 0;
+    margin-top: 270px;
+    padding-top: 10px;
+    color: blue;
+    opacity: 0.5;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.arrow0:hover, .arrow2:hover, .arrow3:hover{
+    opacity: 1;
+}
+
+.arrow1:hover{
+    opacity: 1;
+}
+
+.trend-films-wrapper, .latest-trailers-films-wrapper, .popular-films-wrapper, .free-watch-films-wrapper {
+  transition: transform 0.4s ease;
+}
+/*! end: arrow settings */
+
+/*! start: dark mode */
+.container.active{
+    background-color: black;
+    [class$="text"] {
+        color: white;  /* İstediğiniz rengi buraya yazın */
+    }
+    [class$="films"] {
+        color: white;  /* İstediğiniz rengi buraya yazın */
+    }  
+    .navbar{
+        background-color: black;
+    }
+    .navbar .profile-text-box .profile-text{
+        color: white !important;
+    }
+    .main-content .search-bar-box.active{
+        background-color: black !important;
+    }
+    .switch-mode-slide{
+        transform: translateX(-20px);
+    }    
+} 
+ 
+@media(prefers-color-scheme: dark){
+    .switch-popular-films.active{
+        background-color: black;
+        border-color: white;
+    }}
+/*! end: dark mode */

@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Filmler</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+        <link rel="stylesheet" href="style.css"/>
+    </head>
+    <body>
+        <div class="container">
+            <div class="navbar">
+                <div class="navbar-wrapper">
+                    <div class="logo-wrapper">
+                        <h1 class="logo">TMDB</h1>
+                    </div>            
+                    <div class="menu">
+                        <ul class="menu-options">
+                            <li class="menu-options-item-active"> Main Page</li>
+                            <li class="menu-options-item">Movies</li>
+                            <li class="menu-options-item">TV Shows</li>
+                            <li class="menu-options-item">People</li>
+                            <li class="menu-options-item">More</li>
+                        </ul>
+                    </div>
+                    <div class="profile">
+                        <!-- <img src="" alt=""> -->
+                        <div class="profile-text-box">
+                            <div class="profile-text">Login</div>
+                            <div class="profile-text">Join TMDB</div>
+                            <i class="bi bi-search"></i>     
+                        </div>
+                        <div class="switch-mode">
+                            <i class="bi bi-moon-fill switch-symbol"></i>
+                            <i class="bi bi-brightness-high-fill switch-symbol"></i>
+                            <div class="switch-mode-slide"></div>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+            <!-- navbar kapandı -->
+            <!-- main-content açıldı -->
+            <div class="main-content">
+                <div class="main-content-wrapper">
+                    <p class="main-text">Welcome!</p>
+                    <p class="sub-text">Millions of movies, TV shows and people to discover. Explore now.</p>
+                    <div class="search-bar-box">
+                        <p class="search-bar-text">Search for a movie, tv show, person...</p>
+                        <i class="bi bi-search"></i>
+                    </div>
+                </div>
+            </div>
+            <!-- main-content kapandı -->
+            <!-- trend-content açıldı -->
+            <div class="trend-content">
+                <div class="trend-content-wrapper">
+                    <div class="trend-text">Trending</div>
+                    <div class="switch-trend">
+                        <span class="text-1">Today</span>
+                        <span class="text-2">This Week</span>
+                        <div class="switch-trend-slide"></div>
+                    </div>
+                    <i class="bi bi-chevron-right arrow0"></i>
+                </div>
+                <div class="trend-films-wrapper">
+                    <div class="t-films" onclick="window.open('https://www.themoviedb.org/tv/248416-the-twisted-tale-of-amanda-knox', '_blank')" style="cursor:pointer;">
+                        <img class="tf" src="ts/f1.jpg" alt="">
+                        <p>The Twisted Tale of Amanda Knox</p>
+                    </div>
+                    <div class="t-films" onclick="window.open('https://www.themoviedb.org/movie/1022787-elio', '_blank')" style="cursor:pointer;">
+                        <img class="tf" src="ts/f2.jpg" alt="">
+                        <p>Elio</p>
+                    </div>
+                    <div class="t-films" onclick="window.open('https://www.themoviedb.org/movie/1061474-superman', '_blank')" style="cursor:pointer;">
+                        <img class="tf"  src="ts/f3.jpg" alt="">
+                        <p>Superman</p>
+                    </div>
+                    <div class="t-films" onclick="window.open('https://www.themoviedb.org/movie/1175942-the-bad-guys-2', '_blank')" style="cursor:pointer;">
+                        <img class="tf"  src="ts/f4.jpg" alt="">
+                        <p>The Bad Guys 2</p>
+                    </div>
+                    <div class="t-films" onclick="window.open('https://www.themoviedb.org/movie/1205656-hallow-road', '_blank')" style="cursor:pointer;">
+                        <img class="tf"  src="ts/f5.jpg" alt="">                    
+                        <p>Hallow Road</p>
+                    </div>
+                    <div class="t-films" onclick="window.open('https://www.themoviedb.org/tv/157239-alien-earth', '_blank')" style="cursor:pointer;">
+                        <img class="tf" src="ts/f6.jpg" alt="">
+                        <p>Alien: Earth</p>
+                    </div>
+                    <div class="t-films" onclick="window.open('https://www.themoviedb.org/tv/119051-wednesday', '_blank')" style="cursor:pointer;">
+                        <img class="tf" src="ts/f7.jpg" alt="">
+                        <p>Wednesday</p>
+                    </div>
+                    <div class="t-films" onclick="window.open('https://www.themoviedb.org/movie/1078605-weapons', '_blank')" style="cursor:pointer;">
+                        <img class="tf" src="ts/f8.jpg" alt="">
+                        <p>Weapons</p>
+                    </div>
+                    <div class="t-films" onclick="window.open('https://www.themoviedb.org/movie/1234821-jurassic-world-rebirth', '_blank')" style="cursor:pointer;">
+                        <img class="tf" src="ts/f9.jpg" alt="">
+                        <p>Jurassic World Rebirth</p>
+                    </div>
+                    <div class="t-films" onclick="window.open('https://www.themoviedb.org/tv/227114-butterfly', '_blank')" style="cursor:pointer;">
+                        <img class="tf" src="ts/f10.jpg" alt="">
+                        <p>Butterfly</p>
+                    </div>
+                    <div class="t-films" onclick="window.open('https://www.themoviedb.org/tv/258897-pssica', '_blank')" style="cursor:pointer;">
+                        <img class="tf" src="ts/f11.jpg" alt="">
+                        <p>Rivers of Fate</p>
+                    </div>
+                    <div class="t-films" onclick="window.open('https://www.themoviedb.org/movie/1007734-nobody-2', '_blank')" style="cursor:pointer;">
+                        <img class="tf" src="ts/f12.jpg" alt="">
+                        <p>Nobody 2</p>
+                    </div>
+                    <div class="t-films" onclick="window.open('https://www.themoviedb.org/movie/1151031-bring-her-back', '_blank')" style="cursor:pointer;">
+                        <img class="tf" src="ts/f13.jpg" alt="">
+                        <p>Bring Her Back</p>
+                    </div>
+                    <div class="t-films" onclick="window.open('https://www.themoviedb.org/movie/1254624-night-always-comes', '_blank')" style="cursor:pointer;">
+                        <img class="tf" src="ts/f14.jpg" alt="">
+                        <p>Night Always Comes</p>
+                    </div>
+                    <div class="t-films" onclick="window.open('https://www.themoviedb.org/movie/1311031', '_blank')" style="cursor:pointer;">
+                        <img class="tf" src="ts/f15.jpg" alt="">
+                        <p>Demon Slayer: Kimetsu no Yaiba Infinity Castle</p>
+                    </div>
+                    <div class="t-films" onclick="window.open('https://www.themoviedb.org/movie/7451-xxx', '_blank')" style="cursor:pointer;">
+                        <img class="tf" src="ts/f16.jpg" alt="">
+                        <p>xXx</p>
+                    </div>
+                    <div class="t-films" onclick="window.open('https://www.themoviedb.org/tv/194766-the-summer-i-turned-pretty', '_blank')" style="cursor:pointer;">
+                        <img class="tf" src="ts/f17.jpg" alt="">
+                        <p>The Summer I Turned Pretty</p>
+                    </div>
+                </div> 
+            </div>
+            <!-- trend-content kapandı -->
+            <!-- latest-trailers-content açıldı -->
+            <div class="latest-trailers-content">
+                <div class="latest-trailers-content-wrapper">
+                    <div class="latest-trailers-text">Latest Trailers</div>
+                    <div class="switch-latest-trailers">
+                        <span class="text-1">Popular</span>
+                        <span class="text-2">Streaming</span>
+                        <span class="text-3">On TV</span>
+                        <span class="text-4">For Rent</span>
+                        <span class="text-5">In Theaters</span>
+                        <div class="switch-latest-trailers-slide"></div>
+                    </div>
+                    <i class="bi bi-chevron-right arrow1"></i>
+                </div> 
+                <div class="latest-trailers-films-wrapper">
+                    <div class="lt-films" onclick="window.open('https://www.themoviedb.org/tv/106379-fallout', '_blank')" style="cursor:pointer;">
+                        <img class="ltf" src="lts/lt1.jpg" alt="">
+                        <p>Fallout</p>
+                    </div>
+                    <div class="lt-films" onclick="window.open('https://www.themoviedb.org/movie/1175942-the-bad-guys-2', '_blank')" style="cursor:pointer;">
+                        <img class="ltf"  src="lts/lt2.jpg" alt="">
+                        <p>The Bad Guys 2</p>
+                    </div>
+                     <div class="lt-films" onclick="window.open('https://www.themoviedb.org/movie/1272166-ballad-of-a-small-player', '_blank')" style="cursor:pointer;">
+                        <img class="ltf"  src="lts/lt3.jpg" alt="">
+                        <p>Ballad of a Small Player</p>
+                    </div>
+                    <div class="lt-films" onclick="window.open('https://www.themoviedb.org/movie/1038392-the-conjuring-last-rites', '_blank')" style="cursor:pointer;">
+                        <img class="ltf"  src="lts/lt4.jpg" alt="">                    
+                        <p>The Conjuring: Last Rites</p>
+                    </div>
+                     <div class="lt-films" onclick="window.open('https://www.themoviedb.org/movie/983507-good-boy', '_blank')" style="cursor:pointer;">
+                        <img class="ltf" src="lts/lt5.jpg" alt="">
+                        <p>Good Boy</p>
+                    </div>
+                     <div class="lt-films" onclick="window.open('https://www.themoviedb.org/movie/1035259-the-naked-gun', '_blank')" style="cursor:pointer;">
+                        <img class="ltf" src="lts/lt6.jpg" alt="">
+                        <p>The Naked Gun</p>
+                    </div>
+                     <div class="lt-films" onclick="window.open('https://www.themoviedb.org/movie/1267905-the-roses', '_blank')" style="cursor:pointer;">
+                        <img class="ltf" src="lts/lt7.jpg" alt="">
+                        <p>The Roses</p>
+                    </div>
+                     <div class="lt-films" onclick="window.open('https://www.themoviedb.org/movie/1078605-weapons', '_blank')" style="cursor:pointer;">
+                        <img class="ltf" src="lts/lt8.jpg" alt="">
+                        <p>Weapons</p>
+                    </div>
+                     <div class="lt-films" onclick="window.open('https://www.themoviedb.org/tv/157239-alien-earth', '_blank')" style="cursor:pointer;">
+                        <img class="ltf" src="lts/lt9.jpg" alt="">
+                        <p>Alien: Earth</p>
+                    </div>
+                    <div class="lt-films" onclick="window.open('https://www.themoviedb.org/movie/315011', '_blank')" style="cursor:pointer;">
+                        <img class="ltf" src="lts/lt10.jpg" alt="">
+                        <p>Shin Godzilla</p>
+                    </div>
+                    <div class="lt-films" onclick="window.open('https://www.themoviedb.org/movie/1038392-the-conjuring-last-rites', '_blank')" style="cursor:pointer;">
+                        <img class="ltf" src="lts/lt11.jpg" alt="">
+                        <p>The Conjuring: Last Rites</p>
+                    </div>
+                     <div class="lt-films" onclick="window.open('https://www.themoviedb.org/tv/2190-south-park', '_blank')" style="cursor:pointer;">
+                        <img class="ltf" src="lts/lt12.jpg" alt="">
+                        <p>South Park</p>
+                    </div>
+                </div>   
+            </div>
+            <!-- latest-trailers-content kapandı -->
+            <!-- popular-films-content açıldı -->
+            <div class="popular-films-content">
+                <div class="popular-films-content-wrapper">
+                    <div class="popular-films-text">What's Popular</div>
+                    <div class="switch-popular-films">
+                        <span class="text-1">Streaming</span>
+                        <span class="text-2">On TV</span>
+                        <span class="text-3">For Rent</span>
+                        <span class="text-4">In Theaters</span>
+                        <div class="switch-popular-films-slide"></div>
+                    </div>
+                    <i class="bi bi-chevron-right arrow2"></i>
+                </div> 
+                <div class="popular-films-wrapper">
+                    <div class="p-films" onclick="window.open('https://www.themoviedb.org/tv/93405', '_blank')" style="cursor:pointer;">
+                        <img class="pf" src="pops/p1.jpg" alt="">
+                        <p>Squid Game</p>
+                    </div>
+                    <div class="p-films" onclick="window.open('https://www.themoviedb.org/tv/157239-alien-earth', '_blank')" style="cursor:pointer;">
+                        <img class="pf"  src="pops/p2.jpg" alt="">
+                        <p>Alien: Earth</p>
+                    </div>
+                    <div class="p-films" onclick="window.open('https://www.themoviedb.org/movie/1285247-murder-company', '_blank')" style="cursor:pointer;">
+                        <img class="pf"  src="pops/p3.jpg" alt="">
+                        <p>Murder Company</p>
+                    </div>
+                    <div class="p-films" onclick="window.open('https://www.themoviedb.org/movie/574475-final-destination-bloodlines', '_blank')" style="cursor:pointer;">
+                        <img class="pf"  src="pops/p4.jpg" alt="">                    
+                        <p>Final Destination Bloodlines</p>
+                    </div>
+                    <div class="p-films" onclick="window.open('https://www.themoviedb.org/tv/258462-en-el-barro', '_blank')" style="cursor:pointer;">
+                        <img class="pf" src="pops/p5.jpg" alt="">
+                        <p>In the Mud</p>
+                    </div>
+                    <div class="p-films" onclick="window.open('https://www.themoviedb.org/tv/196890-chief-of-war', '_blank')" style="cursor:pointer;">
+                        <img class="pf" src="pops/p6.jpg" alt="">
+                        <p>Chief of War</p>
+                    </div>
+                    <div class="p-films" onclick="window.open('https://www.themoviedb.org/movie/1195631-william-tell', '_blank')" style="cursor:pointer;">
+                        <img class="pf" src="pops/p7.jpg" alt="">
+                        <p>William Tell</p>
+                    </div>
+                    <div class="p-films" onclick="window.open('https://www.themoviedb.org/tv/1434-family-guy', '_blank')" style="cursor:pointer;">
+                        <img class="pf" src="pops/p8.jpg" alt="">
+                        <p>Family Guy</p>
+                    </div>
+                    <div class="p-films" onclick="window.open('https://www.themoviedb.org/movie/1382406', '_blank')" style="cursor:pointer;">
+                        <img class="pf" src="pops/p9.jpg" alt="">
+                        <p>Striking Rescue</p>
+                    </div>
+                    <div class="p-films" onclick="window.open('https://www.themoviedb.org/movie/7451-xxx', '_blank')" style="cursor:pointer;">
+                        <img class="pf" src="pops/p10.jpg" alt="">
+                        <p>xXx</p>
+                    </div>
+                    <div class="p-films" onclick="window.open('https://www.themoviedb.org/tv/2734-law-order-special-victims-unit', '_blank')" style="cursor:pointer;">
+                        <img class="pf" src="pops/p11.jpg" alt="">
+                        <p>Law & Order: Special Victims Unit</p>
+                    </div>
+                    <div class="p-films" onclick="window.open('https://www.themoviedb.org/tv/1396-breaking-bad', '_blank')" style="cursor:pointer;">
+                        <img class="pf" src="pops/p12.jpg" alt="">
+                        <p>Breaking Bad</p>
+                    </div>
+                    <div class="p-films" onclick="window.open('https://www.themoviedb.org/movie/1285247-murder-company', '_blank')" style="cursor:pointer;">
+                        <img class="pf" src="pops/p13.jpg" alt="">
+                        <p>Murder Company</p>
+                    </div>
+                    <div class="p-films" onclick="window.open('https://www.themoviedb.org/tv/258462-en-el-barro', '_blank')" style="cursor:pointer;">
+                        <img class="pf" src="pops/p14.jpg" alt="">
+                        <p>In the Mud</p>
+                    </div>
+                    <div class="p-films" onclick="window.open('https://www.themoviedb.org/tv/259909-dexter-resurrection', '_blank')" style="cursor:pointer;">
+                        <img class="pf" src="pops/p15.jpg" alt="">
+                        <p>Dexter</p>
+                    </div>
+    
+    
+                </div>   
+            </div>
+            <!-- popular-films-content kapandı -->
+            <!-- free-watch-content açıldı -->
+            <div class="free-watch-content">
+                <div class="free-watch-content-wrapper">
+                    <div class="free-watch-text">Free To Watch</div>
+                    <div class="switch-free-watch">
+                        <span class="text-2">Movies</span>
+                        <span class="text-3">TV</span>
+                        <div class="switch-free-watch-slide"></div>
+                    </div>
+                    <i class="bi bi-chevron-right arrow3"></i>
+                </div> 
+                <div class="free-watch-films-wrapper">
+                    <div class="fw-films" onclick="window.open('https://www.themoviedb.org/movie/629542-the-bad-guys', '_blank')" style="cursor:pointer;">
+                        <img class="fwf" src="fws/fw1.jpg" alt="">
+                        <p>The Bad Guys</p>
+                    </div>
+                    <div class="fw-films" onclick="window.open('https://www.themoviedb.org/movie/615453', '_blank')" style="cursor:pointer;">
+                        <img class="fwf"  src="fws/fw2.jpg" alt="">
+                        <p>Ne Zha</p>
+                    </div>
+                    <div class="fw-films" onclick="window.open('https://www.themoviedb.org/movie/1236471-everyone-is-going-to-die', '_blank')" style="cursor:pointer;">
+                        <img class="fwf"  src="fws/fw3.jpg" alt="">
+                        <p>Everyone Is Going to Die</p>
+                    </div>
+                    <div class="fw-films" onclick="window.open('https://www.themoviedb.org/movie/157336-interstellar', '_blank')" style="cursor:pointer;">
+                        <img class="fwf"  src="fws/fw4.jpg" alt="">                    
+                        <p>Interstellar</p>
+                    </div>
+                    <div class="fw-films" onclick="window.open('https://www.themoviedb.org/movie/1393382-popeye-s-revenge', '_blank')" style="cursor:pointer;">
+                        <img class="fwf" src="fws/fw5.jpg" alt="">
+                        <p>Popeye's Revenge</p>
+                    </div>
+                    <div class="fw-films" onclick="window.open('https://www.themoviedb.org/movie/993234-hranice-lasky', '_blank')" style="cursor:pointer;">
+                        <img class="fwf" src="fws/fw6.jpg" alt="">
+                        <p>Borders of Love</p>
+                    </div>
+                    <div class="fw-films" onclick="window.open('https://www.themoviedb.org/tv/194766-the-summer-i-turned-pretty', '_blank')" style="cursor:pointer;">
+                        <img class="fwf" src="fws/fw7.jpg" alt="">
+                        <p>Angels Fallen: Warriors of Peace</p>
+                    </div>
+                    <div class="fw-films" onclick="window.open('https://www.themoviedb.org/movie/1382406', '_blank')" style="cursor:pointer;">
+                        <img class="fwf" src="fws/fw8.jpg" alt="">
+                        <p>Striking Rescue</p>
+                    </div>
+                    <div class="fw-films" onclick="window.open('https://www.themoviedb.org/movie/1040229-t-i-m', '_blank')" style="cursor:pointer;">
+                        <img class="fwf" src="fws/fw9.jpg" alt="">
+                        <p>T.I.M.</p>
+                    </div>
+                    <div class="fw-films" onclick="window.open('https://www.themoviedb.org/movie/1225572-screamboat', '_blank')" style="cursor:pointer;">
+                        <img class="fwf" src="fws/fw10.jpg" alt="">
+                        <p>Screamboat</p>
+                    </div>
+                    <div class="fw-films" onclick="window.open('https://www.themoviedb.org/movie/86767-the-first-time', '_blank')" style="cursor:pointer;">
+                        <img class="fwf" src="fws/fw11.jpg" alt="">
+                        <p>The First Time</p>
+                    </div>
+                    <div class="fw-films" onclick="window.open('https://www.themoviedb.org/movie/1195631-william-tell', '_blank')" style="cursor:pointer;">
+                        <img class="fwf" src="fws/fw12.jpg" alt="">
+                        <p>William Tell</p>
+                    </div>
+                    <div class="fw-films" onclick="window.open('https://www.themoviedb.org/movie/1285247-murder-company', '_blank')" style="cursor:pointer;">
+                        <img class="fwf" src="fws/fw13.jpg" alt="">
+                        <p>Murder Company</p>
+                    </div>
+                    <div class="fw-films" onclick="window.open('https://www.themoviedb.org/movie/1353328-hook', '_blank')" style="cursor:pointer;">
+                        <img class="fwf" src="fws/fw14.jpg" alt="">
+                        <p>Hook</p>
+                    </div>
+                    <div class="fw-films" onclick="window.open('https://www.themoviedb.org/movie/947478-diplodocus', '_blank')" style="cursor:pointer;">
+                        <img class="fwf" src="fws/fw15.jpg" alt="">
+                        <p>The Green Dinosaur</p>
+                    </div>
+                    <div class="fw-films" onclick="window.open('https://www.themoviedb.org/movie/1443260-rob1n', '_blank')" style="cursor:pointer;">
+                        <img class="fwf" src="fws/fw16.jpg" alt="">
+                        <p>Rob1n</p>
+                    </div>
+                </div>   
+            </div>
+        </div>
+        <script src="script.js"> 
+        </script>
+    </body>
+</html>
+
+
