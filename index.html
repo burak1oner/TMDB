@@ -6,6 +6,32 @@
         <title>Filmler</title>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
         <link rel="stylesheet" href="style.css"/>
+        <style>
+            #searchResults {
+            list-style: none;
+            margin-top: 10px;
+            padding: 0;
+            max-height: 300px;
+            overflow-y: auto;
+            background: whitesmoke;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+            position: absolute;
+            width: 100%;
+            z-index: 1000;
+            }
+            #searchResults li {
+            padding: 10px;
+            cursor: pointer;
+            border-bottom: 1px solid whitesmoke;
+            }
+            #searchResults li:hover {
+            background: whitesmoke;
+            }
+            .search-bar-box {
+            position: relative;
+            }
+        </style>
     </head>
     <body>
         <div class="container">
@@ -45,8 +71,9 @@
                     <p class="main-text">Welcome!</p>
                     <p class="sub-text">Millions of movies, TV shows and people to discover. Explore now.</p>
                     <div class="search-bar-box">
-                        <p class="search-bar-text">Search for a movie, tv show, person...</p>
+                        <input type="text" id="searchInput" placeholder="Search for a movie, tv show, person..." />
                         <i class="bi bi-search"></i>
+                        <ul id="searchResults"></ul>
                     </div>
                 </div>
             </div>
@@ -358,6 +385,43 @@
                 </div>   
             </div>
         </div>
+        <script>
+        const API_KEY = "348088421ad3fb3a9d6e56bb6a9a8f80";
+        const searchInput = document.getElementById("searchInput");
+        const searchResults = document.getElementById("searchResults");
+        let debounceTimer;
+        searchInput.addEventListener("input", () => {
+            clearTimeout(debounceTimer);
+            debounceTimer = setTimeout(fetchResults, 500); });
+        async function fetchResults() {
+            const query = searchInput.value.trim();
+            searchResults.innerHTML = "";
+            if (query.length < 2){
+            searchResults.style.display = "none";
+            return; }
+            const url = `https://api.themoviedb.org/3/search/multi?api_key=${API_KEY}&query=${encodeURIComponent(query)}`;
+            const res = await fetch(url);
+            const data = await res.json();
+
+            if (!data.results.length){
+            searchResults.style.display = "none";
+            return; }
+            searchResults.style.display = "block";
+            data.results.slice(0, 8).forEach(item => {
+            let title = item.title || item.name;
+            let mediaType = item.media_type;
+            let link = `https://www.themoviedb.org/${mediaType}/${item.id}`;
+
+            const li = document.createElement("li");
+            li.textContent = title;
+            li.onclick = () => window.open(link, "_blank");
+            searchResults.appendChild(li);
+            }); }
+        document.addEventListener("click", (e) => {
+            if (!searchInput.contains(e.target) && !searchResults.contains(e.target)) {
+            searchResults.style.display = "none";
+            } });
+        </script>
         <script src="script.js"> 
         </script>
     </body>

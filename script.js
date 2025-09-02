@@ -92,5 +92,3 @@ ball.addEventListener("click", function(){
   items.forEach((item) => item.classList.toggle("active"))
 })
 /* end: dark mode */
-
-

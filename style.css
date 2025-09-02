@@ -128,13 +128,25 @@
 .search-bar-box{
     display: flex;
     align-items: center;
+    background: white;
+    border-radius: 30px;
+    padding: 10px 15px;
     width: 1500px;
-    height: 40px;
-    border-radius: 25px;
-    background-color:  white;
-    justify-content: space-between;
-    padding: 0 15px;
+    margin-top: 20px;
 }
+
+.search-bar-box input{
+    border: none;
+    outline: none;
+    flex: 1;
+    font-size: 16px;
+}
+
+.search-bar-box i{
+    color: gray;
+    font-size: 18px;
+}
+
 
 .search-bar-text{
     color: black;
@@ -487,3 +499,4 @@
         border-color: white;
     }}
 /*! end: dark mode */
+
